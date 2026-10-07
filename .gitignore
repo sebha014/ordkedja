@@ -1,0 +1,11 @@
+wordchain
+a.out
+build/
+*.o
+*~
+*.exe
+*.user
+*.iobj
+*.ipdb
+*.pdb
+.vs/
