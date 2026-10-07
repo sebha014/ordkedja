@@ -1,0 +1,32 @@
+KOMPILERA
+
+g++ -std=c++20 -Wall -Wextra -g wordchain.cpp -o wordchain
+
+
+KÖRA SAMPLE
+
+./wordchain < sample.txt
+
+
+SVENSKA TESTER
+
+cat words/swedish.txt tests/swedish1.txt | ./wordchain
+
+cat words/swedish.txt tests/swedish2.txt | ./wordchain
+
+
+ENGELSKA TESTER
+
+cat words/english.txt tests/english1.txt | ./wordchain
+
+cat words/english.txt tests/english2.txt | ./wordchain
+
+
+FULLT TEST
+
+time cat words/english.txt tests/full1.txt | ./wordchain > output.txt
+
+
+VISA OUTPUT FRÅN FULLT TEST
+
+cat output.txt
